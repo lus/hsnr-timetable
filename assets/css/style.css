@@ -1,0 +1,85 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #00070c;
+    overflow-y: overlay;
+}
+
+.settings-wrapper {
+    width: 80vw;
+    margin: 10vh auto 0 auto;
+}
+
+.settings-wrapper h2 {
+    color: #006eff;
+    font-weight: bolder;
+    text-transform: lowercase;
+    margin: 0 0 10px 10px;
+}
+
+.settings-wrapper .settings {
+    background-color: #00121e;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.settings-wrapper .settings select {
+    background: none;
+    background-color: #00121e;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    color: #006eff;
+    font-family: inherit;
+    font-size: larger;
+    padding: 0 20px;
+    border-right: 20px solid transparent;
+}
+.settings-wrapper .settings select:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.settings-wrapper .settings select:not(:first-child) {
+    border-left: 3px solid #00070c;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 10vw;
+}
+
+.box-container .box-wrapper:not(:last-child) {
+    margin-bottom: 100px;
+}
+
+.box-container .box-wrapper h1 {
+    color: #006eff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0 0 20px 10px;
+}
+
+.box-container .box-wrapper .box {
+    background-color: #00121e;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.box-container .box-wrapper .box .hour {
+    padding: 10px 20px;
+    display: block;
+    height: 100%;
+    width: calc(80vw / 13);
+    color: #6d6d6d;
+    font-weight: bold;
+}
+
+.box-container .box-wrapper .box .hour:not(:last-child) {
+    border-right: 3px solid #00070c;
+}

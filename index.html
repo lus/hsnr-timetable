@@ -5,8 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stundenplan</title>
+    <link rel="preconnect" href="https://api.fonts.coollabs.io" crossorigin>
+    <link rel="stylesheet" href="https://api.fonts.coollabs.io/css2?family=Baloo+2&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <p>nö</p>
+    <div class="settings-wrapper">
+        <h2>Einstellungen</h2>
+        <div class="settings">
+            <select id="semester-select">
+                <option value="ss">Sommersemester</option>
+                <option value="ws">Wintersemester</option>
+            </select>
+            <select id="course-select">
+            </select>
+        </div>
+    </div>
+    <div class="box-container">
+        <div id="monday" class="box-wrapper">
+            <h1>Montag</h1>
+            <div class="box">
+                <div id="monday-1" class="hour"><span class="title">8-9</span><div class="content"></div></div>
+                <div id="monday-2" class="hour"><span class="title">9-10</span><div class="content"></div></div>
+                <div id="monday-3" class="hour"><span class="title">10-11</span><div class="content"></div></div>
+                <div id="monday-4" class="hour"><span class="title">11-12</span><div class="content"></div></div>
+                <div id="monday-5" class="hour"><span class="title">12-13</span><div class="content"></div></div>
+                <div id="monday-6" class="hour"><span class="title">13-14</span><div class="content"></div></div>
+                <div id="monday-7" class="hour"><span class="title">14-15</span><div class="content"></div></div>
+                <div id="monday-8" class="hour"><span class="title">15-16</span><div class="content"></div></div>
+                <div id="monday-9" class="hour"><span class="title">16-17</span><div class="content"></div></div>
+                <div id="monday-10" class="hour"><span class="title">17-18</span><div class="content"></div></div>
+                <div id="monday-11" class="hour"><span class="title">18-19</span><div class="content"></div></div>
+                <div id="monday-12" class="hour"><span class="title">19-20</span><div class="content"></div></div>
+                <div id="monday-13" class="hour"><span class="title">20-21</span><div class="content"></div></div>
+            </div>
+        </div>
+        <div id="tuesday" class="box-wrapper">
+            <h1>Dienstag</h1>
+            <div class="box">
+                <div id="tuesday-1" class="hour"><span class="title">8-9</span><div class="content"></div></div>
+                <div id="tuesday-2" class="hour"><span class="title">9-10</span><div class="content"></div></div>
+                <div id="tuesday-3" class="hour"><span class="title">10-11</span><div class="content"></div></div>
+                <div id="tuesday-4" class="hour"><span class="title">11-12</span><div class="content"></div></div>
+                <div id="tuesday-5" class="hour"><span class="title">12-13</span><div class="content"></div></div>
+                <div id="tuesday-6" class="hour"><span class="title">13-14</span><div class="content"></div></div>
+                <div id="tuesday-7" class="hour"><span class="title">14-15</span><div class="content"></div></div>
+                <div id="tuesday-8" class="hour"><span class="title">15-16</span><div class="content"></div></div>
+                <div id="tuesday-9" class="hour"><span class="title">16-17</span><div class="content"></div></div>
+                <div id="tuesday-10" class="hour"><span class="title">17-18</span><div class="content"></div></div>
+                <div id="tuesday-11" class="hour"><span class="title">18-19</span><div class="content"></div></div>
+                <div id="tuesday-12" class="hour"><span class="title">19-20</span><div class="content"></div></div>
+                <div id="tuesday-13" class="hour"><span class="title">20-21</span><div class="content"></div></div>
+            </div>
+        </div>
+        <div id="wednesday" class="box-wrapper">
+            <h1>Mittwoch</h1>
+            <div class="box">
+                <div id="wednesday-1" class="hour"><span class="title">8-9</span><div class="content"></div></div>
+                <div id="wednesday-2" class="hour"><span class="title">9-10</span><div class="content"></div></div>
+                <div id="wednesday-3" class="hour"><span class="title">10-11</span><div class="content"></div></div>
+                <div id="wednesday-4" class="hour"><span class="title">11-12</span><div class="content"></div></div>
+                <div id="wednesday-5" class="hour"><span class="title">12-13</span><div class="content"></div></div>
+                <div id="wednesday-6" class="hour"><span class="title">13-14</span><div class="content"></div></div>
+                <div id="wednesday-7" class="hour"><span class="title">14-15</span><div class="content"></div></div>
+                <div id="wednesday-8" class="hour"><span class="title">15-16</span><div class="content"></div></div>
+                <div id="wednesday-9" class="hour"><span class="title">16-17</span><div class="content"></div></div>
+                <div id="wednesday-10" class="hour"><span class="title">17-18</span><div class="content"></div></div>
+                <div id="wednesday-11" class="hour"><span class="title">18-19</span><div class="content"></div></div>
+                <div id="wednesday-12" class="hour"><span class="title">19-20</span><div class="content"></div></div>
+                <div id="wednesday-13" class="hour"><span class="title">20-21</span><div class="content"></div></div>
+            </div>
+        </div>
+        <div id="thursday" class="box-wrapper">
+            <h1>Donnerstag</h1>
+            <div class="box">
+                <div id="thursday-1" class="hour"><span class="title">8-9</span><div class="content"></div></div>
+                <div id="thursday-2" class="hour"><span class="title">9-10</span><div class="content"></div></div>
+                <div id="thursday-3" class="hour"><span class="title">10-11</span><div class="content"></div></div>
+                <div id="thursday-4" class="hour"><span class="title">11-12</span><div class="content"></div></div>
+                <div id="thursday-5" class="hour"><span class="title">12-13</span><div class="content"></div></div>
+                <div id="thursday-6" class="hour"><span class="title">13-14</span><div class="content"></div></div>
+                <div id="thursday-7" class="hour"><span class="title">14-15</span><div class="content"></div></div>
+                <div id="thursday-8" class="hour"><span class="title">15-16</span><div class="content"></div></div>
+                <div id="thursday-9" class="hour"><span class="title">16-17</span><div class="content"></div></div>
+                <div id="thursday-10" class="hour"><span class="title">17-18</span><div class="content"></div></div>
+                <div id="thursday-11" class="hour"><span class="title">18-19</span><div class="content"></div></div>
+                <div id="thursday-12" class="hour"><span class="title">19-20</span><div class="content"></div></div>
+                <div id="thursday-13" class="hour"><span class="title">20-21</span><div class="content"></div></div>
+            </div>
+        </div>
+        <div id="friday" class="box-wrapper">
+            <h1>Freitag</h1>
+            <div class="box">
+                <div id="friday-1" class="hour"><span class="title">8-9</span><div class="content"></div></div>
+                <div id="friday-2" class="hour"><span class="title">9-10</span><div class="content"></div></div>
+                <div id="friday-3" class="hour"><span class="title">10-11</span><div class="content"></div></div>
+                <div id="friday-4" class="hour"><span class="title">11-12</span><div class="content"></div></div>
+                <div id="friday-5" class="hour"><span class="title">12-13</span><div class="content"></div></div>
+                <div id="friday-6" class="hour"><span class="title">13-14</span><div class="content"></div></div>
+                <div id="friday-7" class="hour"><span class="title">14-15</span><div class="content"></div></div>
+                <div id="friday-8" class="hour"><span class="title">15-16</span><div class="content"></div></div>
+                <div id="friday-9" class="hour"><span class="title">16-17</span><div class="content"></div></div>
+                <div id="friday-10" class="hour"><span class="title">17-18</span><div class="content"></div></div>
+                <div id="friday-11" class="hour"><span class="title">18-19</span><div class="content"></div></div>
+                <div id="friday-12" class="hour"><span class="title">19-20</span><div class="content"></div></div>
+                <div id="friday-13" class="hour"><span class="title">20-21</span><div class="content"></div></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
